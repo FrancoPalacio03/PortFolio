@@ -1,7 +1,6 @@
 body {
   width: 100%;
   zoom: 115%;
-  overflow: hidden; /* Esto evitará que haya scroll */
 }
 
 .carousel-caption {
