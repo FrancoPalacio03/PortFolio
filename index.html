@@ -11,6 +11,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="/images/favicon.ico">
   </head>
   <body class="dark-mode">
     <nav
@@ -33,13 +34,25 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" id="home" onclick="navigateCarousel('home')">Home</a>
+              <a class="nav-link" id="home" onclick="navigateCarousel('home')"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="skills" onclick="navigateCarousel('skills')">Skills</a>
+              <a
+                class="nav-link"
+                id="skills"
+                onclick="navigateCarousel('skills')"
+                >Skills</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="proyectos" onclick="navigateCarousel('projects')">Proyects</a>
+              <a
+                class="nav-link"
+                id="proyectos"
+                onclick="navigateCarousel('projects')"
+                >Proyects</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -49,13 +62,13 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Contacto
+                Contacts
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Whatsapp</a></li>
-                <li><a class="dropdown-item" href="#">Gmail</a></li>
-                <li><a class="dropdown-item" href="#">Linkedin</a></li>
-                <li><a class="dropdown-item" href="#">GitHub</a></li>
+                <li><a class="dropdown-item" href="https://wa.me/541156320418" target="_blank">Whatsapp</a></li>
+                <li><a class="dropdown-item" href="mailto:francopalacio03@gmail.com?subject=Contact%20From%20PortFolio">Gmail</a></li>
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/franco-palacio-03/" target="_blank">Linkedin</a></li>
+                <li><a class="dropdown-item" href="https://github.com/FrancoPalacio03" target="_blank">GitHub</a></li>
               </ul>
             </li>
           </ul>
@@ -71,7 +84,6 @@
               src="images/homewallpaper.jpg"
               class="d-block w-100"
               alt="..."
-              
             />
             <div class="carousel-caption">
               <div id="home">
@@ -81,193 +93,280 @@
                   experience in personal projects.
                 </p>
                 <div class="carousel-button" id="home">
-                  <button type="button" class="btn btn-primary" id="gotomyprojects" onclick="navigateCarousel('projects')" style="margin-top: 2%;">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="gotomyprojects"
+                    onclick="navigateCarousel('projects')"
+                    style="margin-top: 2%"
+                  >
                     Go To My Projects
                   </button>
-                  <button type="button" class="btn btn-primary" id="gotomyskills" onclick="navigateCarousel('skills')" style="margin-top: 2%;">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="gotomyskills"
+                    onclick="navigateCarousel('skills')"
+                    style="margin-top: 2%"
+                  >
                     Go To My Skills
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item" id="myskills">
+
+          <div class="carousel-item" id="myskills" >
+            <div class="card-group-wrapper">
+              <img
+                src="images/skillswallpaper.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption" >
+                <div id="skills" class="container-fluid">
+                  <h2 class="">Skills</h2>
+
+                  <div class="card-group d-flex flex-wrap">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div
+                            class="card text-bg-dark mb-3"
+                            style="max-width: 18rem"
+                          >
+                            <div class="card-header">Web Development</div>
+                            <div
+                              class="card-body d-flex justify-content-between"
+                            >
+                              <div class="image-container">
+                                <img
+                                  src="images/html.png"
+                                  style="width: 100%"
+                                />
+                                <label class="image-label">HTML</label>
+                              </div>
+                              <div class="image-container">
+                                <img src="images/css.png" style="width: 100%" />
+                                <label class="image-label">CSS</label>
+                              </div>
+                              <div class="image-container">
+                                <img
+                                  src="images/javascript.png"
+                                  style="width: 100%"
+                                />
+                                <label class="image-label">JavaScript</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div
+                            class="card text-bg-dark mb-3"
+                            style="max-width: 18rem"
+                          >
+                            <div class="card-header">Programming Languages</div>
+                            <div
+                              class="card-body d-flex justify-content-between"
+                            >
+                              <div class="image-container">
+                                <img src="images/c.png" style="width: 100%" />
+                                <label class="image-label">C#</label>
+                              </div>
+                              <div class="image-container">
+                                <img
+                                  src="images/python.png"
+                                  style="width: 100%"
+                                />
+                                <label class="image-label">Python</label>
+                              </div>
+                              <div class="image-container">
+                                <img
+                                  src="images/java.png"
+                                  style="width: 100%"
+                                />
+                                <label class="image-label">Java</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3">
+                          <div class="card text-bg-dark mb-3" style="max-width: 18rem">
+                            <div class="card-header">Data Bases</div>
+                            <div class="card-body d-flex justify-content-between">
+                              <div class="image-container d-flex flex-column justify-content-center align-items-center">
+                                <img src="images/mysql.png" style="width: 32%" />
+                                <label class="image-label">MySQL</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        
+                        
+
+                      <div class="col-md-3">
+                        <div
+                          class="card text-bg-dark mb-3"
+                          style="max-width: 18rem"
+                        >
+                          <div class="card-header">Development Tools</div>
+                          <div class="card-body d-flex justify-content-between" style="width: 92%;">
+                            <div class="image-container">
+                              <img
+                                src="images/visual-studio-code.png"
+                                style="width: 98%"
+                              />
+                              <label class="image-label">VS Code</label>
+                            </div>
+                            <div class="image-container">
+                              <img
+                                src="images/github.png"
+                                style="width: 105%"
+                              />
+                              <label class="image-label">GitHub</label>
+                            </div>
+                            <div
+                              class="image-container"
+                              style="margin-left: 6%"
+                            >
+                              <img src="images/logogit.png" style="width: 130%;">
+                              <label class="image-label" style="margin-left: 30%; margin-top: 12%;">Git</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" id="myprojects">
             <img
-              src="images/skillswallpaper.jpg"
+              src="images/projectswallpaper.jpg"
               class="d-block w-100"
               alt="..."
             />
             <div class="carousel-caption">
-                <div id="skills" class="container-fluid">
-                  <h2 class="">Skills</h2>
-                  
-                  
-                  <div class="d-flex flex-wrap">  
-
-                    <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                      <div class="card-header">Web Development</div>
-                      <div class="card-body d-flex justify-content-between">
-                        <div class="image-container">
-                          <img src="images/html.png" style="width: 100%;">
-                          <label class="image-label">HTML</label>
-                        </div>
-                        <div class="image-container">
-                          <img src="images/css.png" style="width: 100%;">
-                          <label class="image-label">CSS</label>
-                        </div>
-                        <div class="image-container">
-                          <img src="images/javascript.png" style="width: 100%;">
-                          <label class="image-label">JavaScript</label>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    
-                  
-                    <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                      <div class="card-header">Programming Languages</div>
-                      <div class="card-body d-flex justify-content-between">
-                        <div class="image-container">
-                          <img src="images/c.png" style="width: 100%;">
-                          <label class="image-label">C#</label>
-                        </div>
-                        <div class="image-container">
-                          <img src="images/python.png" style="width: 100%;">
-                          <label class="image-label">Python</label>
-                        </div>
-                        <div class="image-container">
-                          <img src="images/java.png" style="width: 100%;">
-                          <label class="image-label">Java</label>
-                        </div>
-                      </div>
-                    </div>
-                
-                  </div>
-                  
-                  
-                  <div class="d-flex flex-wrap"">
-                    <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                      <div class="card-header">Data Bases</div>
-                      <div class="card-body d-flex justify-content-between">
-                        <div class="image-container">
-                          <img src="images/mysql.png" style="width: 32%;">
-                          <label class="image-label">MySQL</label>
-                        </div>
-                        
-                      </div>
-                    </div>
-                  
-                    <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                      <div class="card-header">Development Tools</div>
-                      <div class="card-body d-flex justify-content-between">
-                        <div class="image-container">
-                          <img src="images/visual-studio-code.png" style="width: 98%;">
-                          <label class="image-label">VS Code</label>
-                        </div>
-                        <div class="image-container">
-                          <img src="images/github.png" style="width: 105%;">
-                          <label class="image-label">GitHub</label>
-                        </div>
-                        <div class="image-container" style="margin-left: 6%;">
-                          <img src="images/logogit.png" style="width: 135%;"">
-                          <label class="image-label">Git</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
-
-                  
-
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item" id="myprojects">
-              <img src="images/projectswallpaper.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption">
-                <div id="projects" class="container-fluid">
-                  <h2 class="">Projects</h2>
-            
-                  <div class="card-group d-flex flex-wrap">
-                    <div class="container">
+              <div id="projects" class="container-fluid">
+                <h2 class="">Projects</h2>
+                <div class="card-group d-flex flex-wrap">
+                  <div class="container">
                     <div class="row">
                       <div class="col-md-3">
-                        <div class="card" >
-                          <img src="images/calculator.jpg" class="card-img-top" alt="...">
+                        <div class="card">
+                          <img
+                            src="images/calculator.jpg"
+                            class="card-img-top"
+                            alt="..."
+                          />
                           <div class="card-body">
                             <h5 class="card-title">Calculator</h5>
-                            <p class="card-text">calculator with the 4 elementary operations</p>
-                            <a href="https://francopalacio03.github.io/Calculator/" target="_blank" class="btn btn-primary">Go to DEMO</a>
+                            <p class="card-text">
+                              calculator with the 4 elementary operations
+                            </p>
+                            <a
+                              href="https://francopalacio03.github.io/Calculator/"
+                              target="_blank"
+                              class="btn btn-primary"
+                              >Go to DEMO</a
+                            >
                           </div>
                         </div>
                       </div>
                       <div class="col-md-3">
                         <div class="card">
-                          <img src="images/personlist.jpg" class="card-img-top" alt="...">
+                          <img
+                            src="images/personlist.jpg"
+                            class="card-img-top"
+                            alt="..."
+                          />
                           <div class="card-body">
                             <h5 class="card-title">Person List</h5>
-                            <p class="card-text">Budget App made with html, javascript and css</p>
-                            <a href="https://francopalacio03.github.io/PersonList/" target="_blank" class="btn btn-primary">Go to DEMO</a>
+                            <p class="card-text">
+                              Budget App made with html, javascript and css
+                            </p>
+                            <a
+                              href="https://francopalacio03.github.io/PersonList/"
+                              target="_blank"
+                              class="btn btn-primary"
+                              >Go to DEMO</a
+                            >
                           </div>
                         </div>
                       </div>
 
                       <div class="col-md-3">
                         <div class="card">
-                          <img src="images/digitalclock.jpg" class="card-img-top" alt="...">
+                          <img
+                            src="images/digitalclock.jpg"
+                            class="card-img-top"
+                            alt="..."
+                          />
                           <div class="card-body">
                             <h5 class="card-title">Digital Clock</h5>
                             <p class="card-text">minimalist clock widget</p>
-                            <br>
-                            <a href="https://francopalacio03.github.io/DigitalClock/" target="_blank" class="btn btn-primary">Go to DEMO</a>
+                            <br />
+                            <a
+                              href="https://francopalacio03.github.io/DigitalClock/"
+                              target="_blank"
+                              class="btn btn-primary"
+                              >Go to DEMO</a
+                            >
                           </div>
                         </div>
                       </div>
 
                       <div class="col-md-3">
                         <div class="card">
-                          <img src="images/budgetapp.jpg" class="card-img-top" alt="...">
+                          <img
+                            src="images/budgetapp.jpg"
+                            class="card-img-top"
+                            alt="..."
+                          />
                           <div class="card-body">
                             <h5 class="card-title">Budget App</h5>
-                            <p class="card-text">app made to calculate budgets</p>
-                            <a href="https://francopalacio03.github.io/BudgetApp/" target="_blank" class="btn btn-primary">Go to DEMO</a>
+                            <p class="card-text">
+                              app made to calculate budgets
+                            </p>
+                            <a
+                              href="https://francopalacio03.github.io/BudgetApp/"
+                              target="_blank"
+                              class="btn btn-primary"
+                              >Go to DEMO</a
+                            >
                           </div>
                         </div>
-                      
                       </div>
                     </div>
-                  </div>
                   </div>
                 </div>
               </div>
             </div>
-            
-            
-            
-            
           </div>
-
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -276,7 +375,6 @@
       ></script>
       <script src="./js/app.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     </div>
   </body>
 </html>
