@@ -1,10 +1,12 @@
 body {
   width: 100%;
   zoom: 115%;
+  background-repeat:repeat;
+  overflow: hidden; /* Esto evitará que haya scroll */
 }
 
 .carousel-caption {
-  position:relative;
+  position:relative ;
   top: 50%;
   transform: translate(0%, -50%);
   color: #c0bebe;
@@ -15,6 +17,7 @@ body {
 .carousel-container {
   height: 100vh; /* Establece la altura al 100% de la altura de la ventana */
   width: 100%; 
+  
 }
 
 .carousel {
@@ -23,7 +26,8 @@ body {
 }
 
 .carousel-inner {
-  width: 100%;
+  
+  position: relative;
   height: 100%; /* Esto hará que el contenido del carrusel ocupe toda la altura del carrusel */
 }
 
@@ -104,15 +108,55 @@ body {
 
 }
 
-.image-container {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 10px;
+.container {
+  
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical */
+  max-height: 1000px; /* Define la altura máxima del contenedor */
 }
 
-.image-label {
-  margin-top: 5px;
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-3%);
+  }
 }
+
+@media (max-width: 990px) {
+  .carousel-caption {
+    
+    position: absolute;
+    bottom: auto;
+    top: 10%;
+    animation: slide-up 0.5s ease-in-out forwards;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-item {
+    background-size: auto;
+  }
+
+  .carousel-item:hover {
+    background-size: 110%;
+  }
+
+  .carousel-item:hover .carousel-caption {
+    top: 40%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
