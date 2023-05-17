@@ -71,6 +71,7 @@
               src="images/homewallpaper.jpg"
               class="d-block w-100"
               alt="..."
+              
             />
             <div class="carousel-caption">
               <div id="home">
@@ -80,10 +81,10 @@
                   experience in personal projects.
                 </p>
                 <div class="carousel-button" id="home">
-                  <button type="button" class="btn btn-primary" id="gotomyprojects" onclick="navigateCarousel('projects')">
+                  <button type="button" class="btn btn-primary" id="gotomyprojects" onclick="navigateCarousel('projects')" style="margin-top: 2%;">
                     Go To My Projects
                   </button>
-                  <button type="button" class="btn btn-primary" id="gotomyskills" onclick="navigateCarousel('skills')">
+                  <button type="button" class="btn btn-primary" id="gotomyskills" onclick="navigateCarousel('skills')" style="margin-top: 2%;">
                     Go To My Skills
                   </button>
                 </div>
@@ -101,7 +102,7 @@
                   <h2 class="">Skills</h2>
                   
                   
-                  <div class="d-flex">  
+                  <div class="d-flex flex-wrap">  
 
                     <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
                       <div class="card-header">Web Development</div>
@@ -144,7 +145,7 @@
                   </div>
                   
                   
-                  <div class="d-flex">
+                  <div class="d-flex flex-wrap"">
                     <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
                       <div class="card-header">Data Bases</div>
                       <div class="card-body d-flex justify-content-between">
@@ -184,63 +185,68 @@
             </div>
 
             <div class="carousel-item" id="myprojects">
-              <img
-                src="images/projectswallpaper.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
+              <img src="images/projectswallpaper.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption">
                 <div id="projects" class="container-fluid">
                   <h2 class="">Projects</h2>
+            
+                  <div class="card-group d-flex flex-wrap">
+                    <div class="container">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="card" >
+                          <img src="images/calculator.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Calculator</h5>
+                            <p class="card-text">calculator with the 4 elementary operations</p>
+                            <a href="https://francopalacio03.github.io/Calculator/" target="_blank" class="btn btn-primary">Go to DEMO</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="card">
+                          <img src="images/personlist.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Person List</h5>
+                            <p class="card-text">Budget App made with html, javascript and css</p>
+                            <a href="https://francopalacio03.github.io/PersonList/" target="_blank" class="btn btn-primary">Go to DEMO</a>
+                          </div>
+                        </div>
+                      </div>
 
-                  <div class="card-group">
+                      <div class="col-md-3">
+                        <div class="card">
+                          <img src="images/digitalclock.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Digital Clock</h5>
+                            <p class="card-text">minimalist clock widget</p>
+                            <br>
+                            <a href="https://francopalacio03.github.io/DigitalClock/" target="_blank" class="btn btn-primary">Go to DEMO</a>
+                          </div>
+                        </div>
+                      </div>
 
-                    <div class="card" style="width: 18rem;">
-                      <img src="images/calculator.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Calculator</h5>
-                        <p class="card-text">calculator with the 4 elementary operations</p>
-                        <a href="https://francopalacio03.github.io/Calculator/" target="_blank" class="btn btn-primary">Go to DEMO</a>
+                      <div class="col-md-3">
+                        <div class="card">
+                          <img src="images/budgetapp.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Budget App</h5>
+                            <p class="card-text">app made to calculate budgets</p>
+                            <a href="https://francopalacio03.github.io/BudgetApp/" target="_blank" class="btn btn-primary">Go to DEMO</a>
+                          </div>
+                        </div>
+                      
                       </div>
                     </div>
-                  
-                    <div class="card" style="width: 18rem;">
-                      <img src="images/personlist.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Person List</h5>
-                        <p class="card-text">Budget App made with html, javascript and css</p>
-                        <a href="https://francopalacio03.github.io/PersonList/" target="_blank" class="btn btn-primary">Go to DEMO</a>
-                      </div>
-                    </div>
-
-                    <div class="card" style="width: 18rem;">
-                      <img src="images/digitalclock.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Digital Clock</h5>
-                        <p class="card-text">minimalist clock widget</p>
-                        <br>
-                        <a href="https://francopalacio03.github.io/DigitalClock/" target="_blank" class="btn btn-primary">Go to DEMO</a>
-                      </div>
-                    </div>
-
-                    <div class="card" style="width: 18rem;">
-                      <img src="images/budgetapp.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Budget App</h5>
-                        <p class="card-text">app made to calculate budgets</p>
-                        <br>
-                        <a href="https://francopalacio03.github.io/BudgetApp/" target="_blank" class="btn btn-primary">Go to DEMO</a>
-                      </div>
-                    </div>
-
                   </div>
-                  
-
-              
-                  
+                  </div>
                 </div>
               </div>
             </div>
+            
+            
+            
+            
           </div>
 
           <button
