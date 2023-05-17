@@ -3,6 +3,7 @@ body {
   zoom: 115%;
   background-repeat:repeat;
   overflow: hidden; /* Esto evitará que haya scroll */
+  
 }
 
 .carousel-caption {
@@ -111,7 +112,7 @@ body {
 .container {
   
   overflow-y: auto; /* Agrega una barra de desplazamiento vertical */
-  max-height: 1000px; /* Define la altura máxima del contenedor */
+  max-height: 600px; /* Define la altura máxima del contenedor */
 }
 
 @keyframes slide-up {
@@ -135,7 +136,7 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .carousel-item {
     background-size: auto;
   }
