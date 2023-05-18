@@ -99,7 +99,9 @@ body {
 .container {
   
   overflow-y: scroll; /* Agrega una barra de desplazamiento vertical */
-  max-height: 600px; /* Define la altura máxima del contenedor */
+  height: 600px; /* Define la altura máxima del contenedor */
+  padding-bottom: 100px;
+}
 }
 
 @keyframes slide-up {
