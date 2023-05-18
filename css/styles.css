@@ -1,8 +1,10 @@
 body {
   width: 100%;
   zoom: 115%;
-  background-repeat:repeat;
+  background-image: url("https://www.todofondos.net/wp-content/uploads/perforated-leather-texture-dark-android-wallpaper-1080x1920-1-576x1024.png");
+  background-repeat: no-repeat;
   overflow: hidden; /* Esto evitará que haya scroll */
+  background-size: 100%;
   
 }
 
@@ -93,25 +95,10 @@ body {
   margin-right: 2%;
 }
 
-.accordion {
-  background-color: #2e3032;
-  color: #fff;
-}
-
-.accordion-header button {
-  background-color: #252628;
-  color: #fff;
-}
-
-.accordion-item .accordion-collapse {
-  background-color: #2a2a2a;
-  color: #fff;
-
-}
 
 .container {
   
-  overflow-y: auto; /* Agrega una barra de desplazamiento vertical */
+  overflow-y: scroll; /* Agrega una barra de desplazamiento vertical */
   max-height: 600px; /* Define la altura máxima del contenedor */
 }
 
@@ -122,7 +109,7 @@ body {
   }
   100% {
     opacity: 1;
-    transform: translateY(-3%);
+    transform: translateY(0%);
   }
 }
 
@@ -131,24 +118,25 @@ body {
     
     position: absolute;
     bottom: auto;
-    top: 10%;
+    top:  10%;
     animation: slide-up 0.5s ease-in-out forwards;
+    
   }
+.imagemovil {
+    opacity: 0 ;
+  }
+
 }
 
-@media (max-width: 768px) {
-  .carousel-item {
-    background-size: auto;
-  }
 
-  .carousel-item:hover {
-    background-size: 110%;
-  }
 
-  .carousel-item:hover .carousel-caption {
-    top: 40%;
-  }
-}
+
+
+
+
+
+
+
 
 
 
