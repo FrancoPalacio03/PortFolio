@@ -98,8 +98,8 @@ body {
 
 .container {
   
-  overflow-y: scroll; /* Agrega una barra de desplazamiento vertical */
-  height: 600px; /* Define la altura máxima del contenedor */
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical */
+  max-height: 600px; /* Define la altura máxima del contenedor */
   padding-bottom: 100px;
 }
 }
